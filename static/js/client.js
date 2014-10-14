@@ -27,7 +27,7 @@
         FORTY_TWO_MINS_IN_MS = 2520000,
         SIXTY_MINS_IN_MS = 3600000,
         FOCUS_DATA_RANGE_MS = 12600000, // 3.5 hours of actual data
-        FORMAT_TIME = '%I:%M%', //alternate format '%H:%M'
+        FORMAT_TIME = '%H:%M', //alternate format '%H:%M'
         audio = document.getElementById('audio'),
         alarmInProgress = false,
         currentAlarmType = null,
