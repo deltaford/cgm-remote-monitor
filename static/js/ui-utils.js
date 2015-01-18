@@ -38,7 +38,8 @@ function getBrowserSettings(storage) {
 		};
 
 		// Default browser units to server units if undefined.
-		json.units = setDefault(json.units, app.units);
+		//json.units = setDefault(json.units, app.units);
+		json.units = setDefault(json.units, defaultSettings.units);
 		if (json.units == "mmol") {
 			$("#mmol-browser").prop("checked", true);
 		} else {
@@ -62,7 +63,8 @@ function getBrowserSettings(storage) {
 			$("input#customTitle").prop("value", json.customTitle);
 			document.title = "Nightscout: " + json.customTitle;
 		}
-
+	
+	json.nightMode = setDefault(json.theme, defaultSettings.theme);
         if (json.theme == "colors") {
             $("#theme-colors-browser").prop("checked", true);
         } else {
