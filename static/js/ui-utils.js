@@ -3,14 +3,14 @@
 var drawerIsOpen = false;
 var treatmentDrawerIsOpen = false;
 var defaultSettings = {
-	"units": "mg/dl",
-	"alarmUrgentHigh": true,
-	"alarmHigh": true,
-	"alarmLow": true,
-	"alarmUrgentLow": true,
+	"units": "mmol",
+	"alarmUrgentHigh": false,
+	"alarmHigh": false,
+	"alarmLow": false,
+	"alarmUrgentLow": false,
 	"nightMode": false,
-	"theme": "default",
-	"timeFormat": "12"
+	"theme": "colors",
+	"timeFormat": "24"
 };
 
 function getBrowserSettings(storage) {
