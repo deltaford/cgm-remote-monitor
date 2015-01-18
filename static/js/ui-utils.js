@@ -64,7 +64,7 @@ function getBrowserSettings(storage) {
 			document.title = "Nightscout: " + json.customTitle;
 		}
 	
-	json.nightMode = setDefault(json.theme, defaultSettings.theme);
+	json.theme = setDefault(json.theme, defaultSettings.theme);
         if (json.theme == "colors") {
             $("#theme-colors-browser").prop("checked", true);
         } else {
